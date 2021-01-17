@@ -1,0 +1,19 @@
+<GuiXml>
+	<Controls>
+		<TopLevelControl name="DungeonTimerFrame" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" hidden="true">
+			<OnMoveStop>
+				DungeonTimer.OnMoveStop()
+			</OnMoveStop>
+			<Controls>
+				<Texture name="$(parent)Icon">
+					<Anchor point="TOPLEFT" />
+					<Dimensions x="24" y="24" />
+				</Texture>
+				<Label name="$(parent)Label" font="ZoFontWinH3" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)Icon" offsetX="4" />
+					<Dimensions y="24" />
+				</Label>
+			</Controls>
+		</TopLevelControl>
+	</Controls>
+</GuiXml>

@@ -1,0 +1,59 @@
+; This Add-on is not created by, affiliated with or sponsored by ZeniMax Media
+; Inc. or its affiliates. The Elder Scrolls and related logos are registered
+; trademarks or trademarks of ZeniMax Media Inc. in the United States and/or
+; other countries. All rights reserved.
+; https://account.elderscrollsonline.com/add-on-terms
+
+## Title: Dungeon Timer
+## Description: Keeps track of the time elapsed in veteran group dungeons.
+## Author: @kjallatam
+## Version: 1.0.11
+## APIVersion: 100033
+## SavedVariables: DungeonTimerSavedVariables
+
+DungeonTimer.lua
+DungeonTimer.xml
+
+; Changelog:
+;
+; Version 1.0.11 (2021/01/14)
+; * Timer now works in normal dungeons
+; * Timer now pauses when the Activity Complete event is recieved
+;
+; --- Legacy ---
+;
+; Version 1.0.10 (2020/11/05)
+; * API version bump for Update 28 (Markarth)
+;
+; Version 1.0.9 (2020/08/24)
+; * Added support for Stone Garden and Castle Thorn
+;
+; Version 1.0.8 (2020/05/13)
+; * Fixed an issue with the timer failing to reset when using the Activity
+;   Finder to queue for the same dungeon
+; * API version bump for Update 26 (Greymoor)
+;
+; Version 1.0.7 (2020/02/27)
+; * Fixed an issue with the timer sometimes failing to start in Unhallowed Grave
+;
+; Version 1.0.6 (2020/02/26)
+; * The timer for Unhallowed Grave will now start upon the first use of the
+;   Grappling Bow, rather than upon first combat
+;
+; Version 1.0.5 (2020/02/05)
+; * Added support for Icereach and Unhallowed Grave
+;
+; Version 1.0.4 (2019/10/23)
+; * API version bump for Update 24 (Dragonhold)
+;
+; Version 1.0.3 (2019/07/08)
+; * Added support for Moongrave Fane and Lair of Maarselok
+;
+; Version 1.0.2 (2019/05/20)
+; * API version bump for Update 22 (Elsweyr)
+;
+; Version 1.0.1 (2019/02/26)
+; * Fixed the typo causing a LUA error when reloading UI during combat
+;
+; Version 1.0.0 (2019/02/16)
+; * Initial version
